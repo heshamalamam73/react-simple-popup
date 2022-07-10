@@ -2,10 +2,10 @@ import React, { HTMLAttributes } from "react";
 
 export type DialogProps = {
   isOpen: boolean;
-  children?: React.ReactNode[] | React.ReactNode;
   setIsOpen: React.Dispatch<React.SetStateAction<boolean>>;
+  children?: React.ReactNode[] | React.ReactNode;
   handleSubmit?: () => void;
-  handleClose: () => void;
+  handleClose?: () => void;
   closeOnPressEscape?: boolean;
   closeOnClickAway?: boolean;
   width?: string;
